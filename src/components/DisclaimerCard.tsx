@@ -2,7 +2,7 @@ import { AlertTriangle } from "lucide-react";
 
 export function DisclaimerCard() {
   return (
-    <div className="glass-panel rounded-3xl border-warning/40 p-6">
+    <div className="glass-panel rounded-3xl border-warning/40 p-6 print:break-inside-avoid">
       <h3 className="flex items-center gap-2 font-display text-base font-semibold text-foreground">
         <AlertTriangle className="size-4 text-warning" />
         Disclaimer
