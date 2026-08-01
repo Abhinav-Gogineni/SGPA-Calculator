@@ -15,11 +15,11 @@
       <stop offset="100%" style="stop-color:#a855f7"/>
     </linearGradient>
     <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.18"/>
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.15"/>
       <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0"/>
     </radialGradient>
     <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.12"/>
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.10"/>
       <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
     </radialGradient>
   </defs>
@@ -28,38 +28,38 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
 
   <!-- Soft glow blobs -->
-  <ellipse cx="150" cy="150" rx="400" ry="300" fill="url(#glow1)"/>
-  <ellipse cx="1100" cy="520" rx="320" ry="240" fill="url(#glow2)"/>
+  <ellipse cx="300" cy="200" rx="420" ry="300" fill="url(#glow1)"/>
+  <ellipse cx="1050" cy="520" rx="320" ry="220" fill="url(#glow2)"/>
 
-  <!-- Subtle border frame -->
-  <rect x="28" y="28" width="1144" height="574" rx="28" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.25"/>
+  <!-- Border frame -->
+  <rect x="30" y="30" width="1140" height="570" rx="28" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.2"/>
 
-  <!-- Logo square -->
-  <rect x="80" y="76" width="96" height="96" rx="22" fill="url(#brand)"/>
+  <!-- Logo square — centered horizontally in left half -->
+  <rect x="160" y="72" width="88" height="88" rx="20" fill="url(#brand)"/>
   <!-- Graduation cap -->
-  <polygon points="128,102 164,116 128,130 92,116" fill="white" opacity="0.97"/>
-  <circle cx="128" cy="102" r="4.5" fill="white"/>
-  <line x1="92" y1="116" x2="92" y2="132" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-  <circle cx="92" cy="136" r="4.5" fill="white" opacity="0.85"/>
-  <path d="M152,121 L152,133 Q128,142 104,133 L104,121 Q128,130 152,121 Z" fill="white" opacity="0.65"/>
+  <polygon points="204,96 236,109 204,122 172,109" fill="white" opacity="0.97"/>
+  <circle cx="204" cy="96" r="4" fill="white"/>
+  <line x1="172" y1="109" x2="172" y2="123" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="172" cy="127" r="4" fill="white" opacity="0.85"/>
+  <path d="M228,114 L228,125 Q204,133 180,125 L180,114 Q204,122 228,114 Z" fill="white" opacity="0.65"/>
 
-  <!-- Main heading -->
-  <text x="80" y="268" font-family="system-ui,-apple-system,sans-serif" font-size="76" font-weight="800" fill="url(#title-grad)" letter-spacing="-1">SGPA Calculator</text>
+  <!-- Main heading — centered -->
+  <text x="600" y="252" font-family="system-ui,-apple-system,sans-serif" font-size="72" font-weight="800" fill="url(#title-grad)" text-anchor="middle" letter-spacing="-1">SGPA Calculator</text>
 
-  <!-- Gradient underline -->
-  <rect x="80" y="280" width="540" height="4" rx="2" fill="url(#brand)" opacity="0.5"/>
+  <!-- Underline — centered -->
+  <rect x="280" y="266" width="640" height="4" rx="2" fill="url(#brand)" opacity="0.45"/>
 
-  <!-- Subtitle -->
-  <text x="80" y="334" font-family="system-ui,-apple-system,sans-serif" font-size="27" font-weight="400" fill="#6d28d9" letter-spacing="0.2">JNTUK R23  ·  CSE (Artificial Intelligence &amp; Machine Learning)</text>
+  <!-- Subtitle — centered -->
+  <text x="600" y="322" font-family="system-ui,-apple-system,sans-serif" font-size="24" font-weight="400" fill="#6d28d9" text-anchor="middle">JNTUK R23  ·  CSE (Artificial Intelligence &amp; Machine Learning)</text>
 
-  <!-- Description -->
-  <text x="80" y="402" font-family="system-ui,-apple-system,sans-serif" font-size="23" fill="#7e6ea8">Calculate your semester SGPA instantly with live credits,</text>
-  <text x="80" y="438" font-family="system-ui,-apple-system,sans-serif" font-size="23" fill="#7e6ea8">grade points, and pass/fail status.</text>
+  <!-- Description — centered -->
+  <text x="600" y="390" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#7e6ea8" text-anchor="middle">Calculate your semester SGPA instantly with live credits,</text>
+  <text x="600" y="424" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#7e6ea8" text-anchor="middle">grade points, and pass/fail status.</text>
 
   <!-- Divider -->
-  <line x1="80" y1="508" x2="1120" y2="508" stroke="#a855f7" stroke-width="1" opacity="0.25"/>
+  <line x1="160" y1="500" x2="1040" y2="500" stroke="#a855f7" stroke-width="1" opacity="0.25"/>
 
-  <!-- Developed by — two separate elements for reliable spacing in PNG -->
-  <text x="80" y="562" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#9d7ec9">Developed by</text>
-  <text x="252" y="562" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="url(#title-grad)">Abhinav</text>
+  <!-- Developed by — centered, two elements with known widths -->
+  <text x="520" y="556" font-family="system-ui,-apple-system,sans-serif" font-size="21" fill="#9d7ec9" text-anchor="end">Developed by</text>
+  <text x="536" y="556" font-family="system-ui,-apple-system,sans-serif" font-size="21" font-weight="700" fill="url(#title-grad)" text-anchor="start">Abhinav</text>
 </svg>
