@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportAppError } from "../lib/error-reporting";
+import { reportAppError } from "../lib/error-reporting
 import { Toaster } from "@/components/ui/sonner";
 
 function NotFoundComponent() {
@@ -79,13 +79,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "SGPA Calculator — JNTUK R23 CSE (AI & ML)" },
-      { name: "description", content: "Calculate your semester SGPA for JNTUK R23 CSE (AI & ML) with live credits and credit points." },
+      { name: "description", content: "Calculate your semester SGPA for JNTUK R23 CSE (AI & ML) with live credits, grade points, and pass/fail status." },
       { name: "author", content: "Abhinav" },
-      { property: "og:title", content: "SGPA Calculator — JNTUK R23 CSE (AI & ML)" },
-      { property: "og:description", content: "Calculate your semester SGPA for JNTUK R23 CSE (AI & ML) with live credits and credit points." },
+      // Open Graph (Facebook, LinkedIn, WhatsApp)
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "SGPA Calculator — JNTUK R23 CSE (AI & ML)" },
+      { property: "og:description", content: "Calculate your semester SGPA for JNTUK R23 CSE (AI & ML) with live credits, grade points, and pass/fail status." },
+      { property: "og:image", content: "/og-image.png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "SGPA Calculator — JNTUK R23 CSE (AI & ML)" },
+      // Twitter / X
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Abhinav" },
+      { name: "twitter:title", content: "SGPA Calculator — JNTUK R23 CSE (AI & ML)" },
+      { name: "twitter:description", content: "Calculate your semester SGPA for JNTUK R23 CSE (AI & ML) with live credits, grade points, and pass/fail status." },
+      { name: "twitter:image", content: "/og-image.png" },
+      { name: "twitter:image:alt", content: "SGPA Calculator — JNTUK R23 CSE (AI & ML)" },
     ],
     links: [
       {
@@ -93,7 +102,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "stylesheet",
