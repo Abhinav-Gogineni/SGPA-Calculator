@@ -10,7 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportAppError } from "../lib/error-reporting
+import { reportAppError } from "../lib/error-reporting";
 import { Toaster } from "@/components/ui/sonner";
 
 function NotFoundComponent() {
