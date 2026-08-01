@@ -1,66 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0a1e"/>
-      <stop offset="100%" style="stop-color:#1a0f3a"/>
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="50%" style="stop-color:#f3e8ff"/>
+      <stop offset="100%" style="stop-color:#e9d5ff"/>
     </linearGradient>
     <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#7c3aed"/>
       <stop offset="100%" style="stop-color:#a855f7"/>
     </linearGradient>
-    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#7c3aed"/>
-      <stop offset="100%" style="stop-color:#c084fc"/>
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6d28d9"/>
+      <stop offset="60%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="18" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.18"/>
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </radialGradient>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- Glow blob -->
-  <ellipse cx="300" cy="200" rx="320" ry="220" fill="#7c3aed" opacity="0.18" filter="url(#glow)"/>
-  <ellipse cx="950" cy="480" rx="260" ry="180" fill="#a855f7" opacity="0.12" filter="url(#glow)"/>
+  <!-- Soft glow blobs -->
+  <ellipse cx="150" cy="150" rx="400" ry="300" fill="url(#glow1)"/>
+  <ellipse cx="1100" cy="520" rx="320" ry="240" fill="url(#glow2)"/>
 
-  <!-- Grid lines subtle -->
-  <line x1="0" y1="315" x2="1200" y2="315" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
-  <line x1="600" y1="0" x2="600" y2="630" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+  <!-- Subtle border frame -->
+  <rect x="28" y="28" width="1144" height="574" rx="28" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.25"/>
 
-  <!-- Logo icon -->
-  <rect x="80" y="80" width="88" height="88" rx="20" fill="url(#brand)"/>
-  <!-- Graduation cap inside logo -->
-  <polygon points="124,103 156,116 124,129 92,116" fill="white" opacity="0.95"/>
-  <circle cx="124" cy="103" r="4" fill="white"/>
-  <line x1="92" y1="116" x2="92" y2="130" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
-  <circle cx="92" cy="133" r="4" fill="white" opacity="0.85"/>
-  <path d="M148,121 L148,132 Q124,140 100,132 L100,121 Q124,129 148,121 Z" fill="white" opacity="0.65"/>
+  <!-- Logo square -->
+  <rect x="80" y="76" width="96" height="96" rx="22" fill="url(#brand)"/>
+  <!-- Graduation cap -->
+  <polygon points="128,102 164,116 128,130 92,116" fill="white" opacity="0.97"/>
+  <circle cx="128" cy="102" r="4.5" fill="white"/>
+  <line x1="92" y1="116" x2="92" y2="132" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="92" cy="136" r="4.5" fill="white" opacity="0.85"/>
+  <path d="M152,121 L152,133 Q128,142 104,133 L104,121 Q128,130 152,121 Z" fill="white" opacity="0.65"/>
 
-  <!-- Main title -->
-  <text x="80" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="url(#text-grad)">SGPA Calculator</text>
+  <!-- Main heading -->
+  <text x="80" y="268" font-family="system-ui,-apple-system,sans-serif" font-size="76" font-weight="800" fill="url(#title-grad)" letter-spacing="-1">SGPA Calculator</text>
+
+  <!-- Gradient underline -->
+  <rect x="80" y="280" width="540" height="4" rx="2" fill="url(#brand)" opacity="0.5"/>
 
   <!-- Subtitle -->
-  <text x="80" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="400" fill="#a78bfa">JNTUK R23 · CSE (Artificial Intelligence &amp; Machine Learning)</text>
+  <text x="80" y="334" font-family="system-ui,-apple-system,sans-serif" font-size="27" font-weight="400" fill="#6d28d9" letter-spacing="0.2">JNTUK R23  ·  CSE (Artificial Intelligence &amp; Machine Learning)</text>
 
   <!-- Description -->
-  <text x="80" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#8b7aa8">Calculate your semester SGPA instantly with live</text>
-  <text x="80" y="448" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#8b7aa8">credits, grade points, and pass/fail status.</text>
+  <text x="80" y="402" font-family="system-ui,-apple-system,sans-serif" font-size="23" fill="#7e6ea8">Calculate your semester SGPA instantly with live credits,</text>
+  <text x="80" y="438" font-family="system-ui,-apple-system,sans-serif" font-size="23" fill="#7e6ea8">grade points, and pass/fail status.</text>
 
   <!-- Divider -->
-  <rect x="80" y="500" width="120" height="3" rx="2" fill="url(#brand)"/>
+  <line x1="80" y1="508" x2="1120" y2="508" stroke="#a855f7" stroke-width="1" opacity="0.25"/>
 
-  <!-- Author -->
-  <text x="80" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#6d5a8a">Developed by </text>
-  <text x="230" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="url(#text-grad)">Abhinav</text>
-
-  <!-- Right side decorative SGPA display -->
-  <rect x="820" y="160" width="300" height="200" rx="24" fill="#1e1040" opacity="0.8"/>
-  <rect x="820" y="160" width="300" height="200" rx="24" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.5"/>
-  <text x="970" y="222" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#a78bfa" text-anchor="middle" letter-spacing="3">YOUR SGPA</text>
-  <text x="970" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="80" font-weight="700" fill="url(#text-grad)" text-anchor="middle">9.42</text>
-  <rect x="870" y="390" width="200" height="48" rx="24" fill="#7c3aed" opacity="0.2"/>
-  <rect x="870" y="390" width="200" height="48" rx="24" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.6"/>
-  <text x="970" y="421" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#4ade80" text-anchor="middle">✓ PASS</text>
+  <!-- Developed by — two separate elements for reliable spacing in PNG -->
+  <text x="80" y="562" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#9d7ec9">Developed by</text>
+  <text x="252" y="562" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" fill="url(#title-grad)">Abhinav</text>
 </svg>
